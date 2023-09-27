@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Printing</title>
+</head>
+<body>
+   <script>
+
+// here are some common approaches to reverse a string in javascript:
+
+// Using reduce() and split()
+// Using split(), reverse() and join() method
+// Using spread operator
+// using Array.form() and reverse() method
+// Using spread operator and reduce() method
+// Using for loop
+// Using substring() and a decrementing index
+
+
+
+// 1: Using reduce() and split()
+
+
+// const str = "Geeks for Geeks";
+// const reversedString = str.split("").reduce((acc, char) => char + acc, "");
+// document.write(reversedString);
+
+// 2: Using split(), reverse() and join() method
+// In this approach, The split() method divides the string into an array of characters, reverse() reverses the array, and join() combines the reversed characters into a new string, effectively reversing the original string.
+
+document.write("<br>")
+
+// Function to reverse string
+function ReverseString(str) {
+    return str.split('').reverse().join('')
+}
+ 
+// Function call
+document.write(ReverseString("Full Stack learning"))
+
+
+document.write("<br>")
+// 3: Using spread operator
+
+const str = "reverse Printing in web";
+const reversedStr = [...str].reverse().join("");
+document.write(reversedStr);
+
+
+
+
+
+   </script> 
+
+
+
+
+
+
+</body>
+</html>
